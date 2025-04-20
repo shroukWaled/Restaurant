@@ -1,0 +1,70 @@
+.testimonysection{
+    background-color: var(--color-black);
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+}
+.testimonysection .testimonyheader{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.testimonysection .testimonyheader img{
+    width: 40px;
+    margin-top: 5px;
+}
+.testimonysection .testimonyheader h1{
+    color: var(--color-golden);
+    font-family: "Cormorant Upright", Sans-serif;
+    font-size: 40px;
+    margin-top: 10px;
+    max-width: 400px;
+}
+
+.testimonysection .testimonyheader p{
+    text-transform: capitalize;
+    font-family: "Cormorant Upright", Sans-serif;
+    font-size: x-large;
+}
+.testimonysection .testimony{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    padding: 5%;
+    gap: 4%;
+}
+.testimonysection .testimony div{
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+}
+.testimonysection .testimony img{
+    width: 100px;
+    height: fit-content;
+}
+.testimonysection .testimony div div{
+    display: flex;
+    flex-direction: column;
+}
+.testimonysection .testimony div div img{
+    width: 35px;
+    transform: translate(-60px, 25px);
+}
+.testimonysection .testimony div div p:nth-child(4){
+    font-size: larger;
+    text-transform: capitalize;
+}
+.testimonysection .testimony div div p:nth-child(3){
+    color: var(--color-golden);
+    font-family: "Cormorant Upright", Sans-serif;
+    margin-bottom:10px ;
+    text-transform: capitalize;
+    
+}
+@media screen and (max-width:800px){
+    .testimonysection .testimony{
+        grid-template-columns: repeat(1,100%);
+    }
+}

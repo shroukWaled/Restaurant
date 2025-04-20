@@ -1,0 +1,117 @@
+.menusection{
+    background-color: var(--color-black);
+    
+}
+.menusection .menuheader{
+    grid-area: menuheader; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family:  "Cormorant Upright", Sans-serif;
+    padding-top: 30px;
+}
+.menusection .menuheader p{
+    color: var(--color-white);
+    font-size: x-large;
+    
+}
+.menusection .menuheader img{
+    margin-top: 7px;
+    margin-bottom: 17px;
+    width: 40px;
+    
+}
+.menusection .menuheader h1{
+    color: var(--color-golden);
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.menusection .menucontent{
+    display: flex;
+    flex-direction: row;
+    
+}
+.menusection .wines,
+.menusection .cocktails{
+    display: flex;
+    flex-direction: column;
+    width: calc(100%/3);
+    padding: 10px 0;
+    
+}
+
+.h1style{
+    text-align: center;
+    font-family:  "Cormorant Upright", Sans-serif;
+    color: var(--color-white);
+    margin-bottom: 20px;
+}
+.menusection .wines .wine,
+.menusection .cocktails .cocktail {
+    display: flex;
+    justify-content: center; 
+    padding: 10px 40px; 
+    flex-direction: column;
+    
+}
+.menusection .wines .wine .firstrow,
+.menusection .cocktails .cocktail .firstrow{
+    display: flex;
+   align-items:flex-end; 
+    flex-direction: row;
+    margin-bottom: 10px;
+    margin-top: 14px;
+    
+}
+
+.title{
+
+    color: var(--color-golden);
+    font-family:  "Cormorant Upright", Sans-serif;
+    font-size: x-large;
+}
+.price{
+    color: var(--color-white);
+}
+.tag{
+    color: var(--color-grey);
+    margin-top: 5px; 
+    display: block;
+    text-align: left;
+    
+    
+    
+}
+
+.seperator{
+    flex-grow: 1;
+    border-bottom: 1px solid #ebebeb;
+    width: 40px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.menusection  .imagedrink{
+    width: calc(100%/3);
+    align-items: center;
+}
+.menusection  .imagedrink img{
+    width:100%;
+}
+.button-style{
+    
+    width: 15%;
+    height: 45px;
+    background-color: var(--color-golden);
+    font-family:  "Cormorant Upright", Sans-serif;
+    font-size:large;
+    font-weight: bold;
+    margin-left: 42%;
+    margin-bottom: 150px;
+    margin-top: 50px;
+  }
+  .button-style:hover{
+   
+    background-color: var(--color-black);
+    color: var(--color-golden);
+    
+  }

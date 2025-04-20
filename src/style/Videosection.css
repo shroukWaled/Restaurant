@@ -1,0 +1,12 @@
+.videosection{
+    background-color: var(--color-black);
+    padding-top:  10%;
+    padding-bottom:  10%;
+    
+}
+.videosection .videostyle video{
+  width: 100%;
+  display: block;
+  
+  
+}

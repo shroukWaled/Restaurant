@@ -1,0 +1,124 @@
+.header { 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-color: var(--color-black);
+  z-index: 1000;
+}
+
+
+
+.header .container {
+  margin-left: 7%;
+  margin-right: 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+/* Logo */
+.header .container img {
+  width: 200px;
+}
+
+/* Main Navigation Menu */
+.header .main-ul {
+  color: var(--color-golden);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+}
+
+.header .main-ul li {
+  text-transform: uppercase;
+  margin-right: 20px;
+  position: relative;
+}
+
+.drop-down .drop-down-ul {
+  display: none;
+  position: absolute;
+  background-color: var(--color-black);
+  padding: 10px 0;
+  margin: 0;
+  z-index: 1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.drop-down .drop-down-ul li {
+  padding: 5px 20px;
+}
+
+.drop-down .drop-down-ul li a {
+  color: var(--color-golden);
+}
+
+.drop-down:hover .drop-down-ul {
+  display: block;
+}
+
+/* Form */
+.header .container form input {
+  background-color: var(--color-black);
+  height: 45px;
+  padding-left: 10px;
+  border: none;
+  border-bottom: 2px solid #444;
+  text-transform: capitalize;
+}
+
+.header .container form button {
+  background-color: transparent;
+  color: var(--color-white);
+  margin-left: -20px;
+}
+
+/* Hidden Icon */
+.header .hidden {
+  display: none;
+  cursor: pointer;
+}
+
+.header .hidden .icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 20px;
+}
+
+.header .hidden .icon span {
+  background-color: var(--color-grey);
+  height: 2px;
+  width: 100%;
+  transition: width 0.3s ease;
+}
+
+
+@media screen and (max-width: 870px) {
+  .header .main-ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    right: 7%;
+    background-color: var(--color-black);
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px 0;
+    transform: translateY(-20px);
+  }
+
+  .header .main-ul.show {
+    display: flex;
+    transform: translateY(0);
+  }
+
+  .header .hidden {
+    display: block;
+  }
+}
+

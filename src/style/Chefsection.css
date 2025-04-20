@@ -1,0 +1,73 @@
+.Chefsection{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--color-black);
+    padding-top: 10%;
+}
+@media screen and (max-width:800px) {
+    .Chefsection{
+        flex-direction:column;
+        justify-content: center;
+    }
+    .Chefsection .right div:nth-child(2) p {
+        width: 400px;
+    }
+    .Chefsection .left img{
+        width: 200px;
+    }
+    
+}
+.Chefsection .left{
+    flex: 50%;
+    padding: 4%;
+}
+.Chefsection .left img{
+    width: 600px;
+}
+.Chefsection .right{
+    padding: 4%;
+    flex: 50%;
+    color: var(--color-white);
+}
+.Chefsection .right div:first-child h1{
+    color: var(--color-golden);
+    font-family: "Cormorant Upright", Sans-serif;
+    font-size: 70px;
+    margin-top: 10px;
+    max-width: 450px;
+}
+.Chefsection .right div:nth-child(2){
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.Chefsection .right div:first-child p{
+    text-transform: capitalize;
+    font-family: "Cormorant Upright", Sans-serif;
+    font-size: x-large;
+}
+.Chefsection .right div:nth-child(2) p img{
+    width: 35px;
+    margin-right: 10px;
+   
+}
+.Chefsection .right div:nth-child(2) p {
+    line-height: 1.66em;
+    width: 500px;
+    font-size: x-large;
+}
+.Chefsection .right div:nth-child(3) p:first-child {
+    color: var(--color-golden);
+    font-family: "Cormorant Upright", Sans-serif;
+    margin-bottom: 15px;
+    font-size: x-large;
+
+}
+.Chefsection .right div:nth-child(3) p:nth-child(2){
+    text-transform: uppercase;
+
+}
+.Chefsection .right div:nth-child(3) img:last-child{
+    margin-top: 60px;
+    width: 300px;
+}
+
